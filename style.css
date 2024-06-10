@@ -536,12 +536,9 @@ header{
     }
     #buttons{
       /* border: 1px solid red; */
-      height: 20px;
+      height: 10px;
       
       button{
-        position: relative;
-        top: -100px;
-        left: 200px;
         padding:5px 10px;
         margin: 3%;
         border: none;
@@ -550,8 +547,8 @@ header{
       }
       button a{
         color: rgb(11, 0, 19);
-        padding:5px 20px;
-        font-size: .4rem;
+        padding:5px 0px;
+        font-size: .6rem;
         background-color: var(--combine-btn-link2);
       }
     }
@@ -560,14 +557,13 @@ header{
     /* border: 1px solid red; */
     img{
     width: 150px;
-    position: relative;
-    top: 50px;
     
   }
 }
 }
 
 #section2{
+    margin-top: 150px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
   .section2-child{
