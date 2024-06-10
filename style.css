@@ -19,9 +19,11 @@ a{
 
 }
 header{
+  width: 100%;
   top: 0px;
   position: sticky;
 }
+
 #heading{
 
   .heading-child{
@@ -466,4 +468,468 @@ header{
     }
    
   }
+ }
+
+
+ @media screen and (min-width:360px) {
+  
+#heading{
+  width: 100%;
+  .heading-child{
+    /* border: 1px solid red; */
+    background-image: linear-gradient(120deg,white,gray,rgb(4, 85, 85));
+    img{
+      width: 20%;
+    }
+
+    .navlist{
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      padding:8px 20px;
+      gap: 20px;
+      background-color:rgba(2, 64, 64, 0.192);
+
+      li a{
+        color: whitesmoke;
+        font-size: .5rem;
+      }
+    }
+  }
+}
+
+#section1{
+  display: grid;
+  width: 100%;
+  grid-template-columns:1fr 1fr;
+  gap: 10px;
+
+  .section1-child {
+    /* border: 2px solid red; */
+    padding: 20px;
+  }
+  .child1{
+    margin: 4px 0px 4px 6px;
+
+    h1{
+      font-size: 20px;
+    }
+    h1::first-letter{
+      color: var(--primary-color);
+      font-size: 40px;
+    }
+    p{
+      font-size: .5rem;
+    }
+
+    .social-link{
+      display: flex;
+      /* border: 1px solid red; */
+      width: 100%;
+      justify-content: space-evenly;
+      align-items: center;
+      
+      li a i{
+        font-size: 1rem;
+        color: teal;
+      }
+    }
+    #buttons{
+      /* border: 1px solid red; */
+      height: 20px;
+      
+      button{
+        position: relative;
+        top: -100px;
+        left: 200px;
+        padding:5px 10px;
+        margin: 3%;
+        border: none;
+        border-radius: 8px;
+        background-color: var(--combine-btn-link2);
+      }
+      button a{
+        color: rgb(11, 0, 19);
+        padding:5px 20px;
+        font-size: .4rem;
+        background-color: var(--combine-btn-link2);
+      }
+    }
+  }
+  .child2{
+    /* border: 1px solid red; */
+    img{
+    width: 150px;
+    position: relative;
+    top: 50px;
+    
+  }
+}
+}
+
+#section2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  .section2-child{
+    /* border: 1px solid red; */
+    padding: 10px;
+
+    img{
+      width: 150px;
+      display: block;
+      margin: auto;
+    }
+
+    h1{
+      font-size: 20px;
+      /* text-align: center; */
+    }
+
+    p{
+      font-size: 10px;
+    }
+
+    .skills{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+
+      li i{
+        font-size: 30px;
+        color: rgb(21, 168, 168);
+        text-shadow: 2px 4px 5px black;
+      }
+    }
+  }
+}
+
+#section3{
+ /* position: relative;
+ top: 100px; */
+ padding-bottom: 50px;
+ margin-top: 150px;
+ 
+  h1{
+    text-align: center;
+    font-size: 30px;
+    color: gray;
+    text-shadow: 1px 1px 1px black;
+  }
+  #section3-container{
+    display: grid;
+    grid-template-columns:1fr;
+    gap: 20px;
+    padding: 40px;
+
+  .section3-child{
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px gray;
+    /* border: 1px solid red; */
+    background-color: aliceblue;
+    
+    h4 i{
+      color: orangered;
+    }
+    button{
+      padding:5px 20px;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 2px 3px 4px rgb(32, 39, 39);
+      background-color: var(--combine-btn-link2);
+    }
+    button a{
+      color: rgb(39, 37, 37);
+      padding:5px 20px;
+      background-color: var(--combine-btn-link2);
+    }
+    button:hover{
+      box-shadow: 2px 3px 4px teal;
+    }
+  }
+}
+
+    #all-project-button{
+      padding:5px 20px;
+      border: none;
+      display: block;
+      margin: auto;
+      border-radius: 8px;
+      box-shadow: 2px 3px 4px rgb(32, 39, 39);
+      background-color: var(--combine-btn-link2);
+    }
+    #all-project-button:hover{
+      box-shadow: 2px 3px 4px teal;
+    }
+}
+
+#section4{
+   /* position: relative;
+   top: 200px; */
+   margin-top: 150px;
+
+   h2{
+     text-align: center;
+     font-size: 40px;
+     color: gray;
+     text-shadow: 1px 1px 1px black;
+   }
+   #section4-container{
+     display: grid;
+     grid-template-columns:1fr;
+     gap: 20px;
+     padding: 40px;
+ 
+   .section4-child{
+     padding: 20px;
+     border-radius: 8px;
+     box-shadow: 1px 1px 3px gray;
+     /* border: 1px solid red; */
+     background-color: aliceblue;
+     
+     h4 i{
+       color: orangered;
+     }
+     button{
+       padding:5px 20px;
+       border: none;
+       border-radius: 8px;
+       box-shadow: 2px 3px 4px rgb(32, 39, 39);
+       background-color: var(--combine-btn-link2);
+     }
+     button a{
+       color: rgb(39, 37, 37);
+       padding:5px 20px;
+       background-color: var(--combine-btn-link2);
+     }
+     button:hover{
+       box-shadow: 2px 3px 4px teal;
+     }
+   }
+ }
+ 
+     #all-project-button{
+       padding:5px 20px;
+       border: none;
+       display: block;
+       margin: auto;
+       border-radius: 8px;
+       box-shadow: 2px 3px 4px rgb(32, 39, 39);
+       background-color: var(--combine-btn-link2);
+     }
+     #all-project-button:hover{
+       box-shadow: 2px 3px 4px teal;
+     }
+ }
+
+ #section5{
+  /* position: relative;
+  top: 300px; */
+  padding-bottom: 50px;
+
+    .section5-child{
+     margin: 40px;
+    }
+    .child2{
+      display: flex;
+      gap: 10px;
+      padding-bottom:30px;
+      border-radius: 8px;
+      box-shadow: 2px 4px 5px gray;
+      width: 70%;
+      /* border: 1px solid red; */
+
+      img{
+        width: 100%;
+      }
+      p{
+        font-size: 13px;
+      }
+      button{
+        padding:5px 20px;
+        border: none;
+        border-radius: 8px;
+        box-shadow: 2px 2px 3px teal;
+        background-color: var(--combine-btn-link2);
+      }
+      button a{
+        color: rgb(42, 39, 39);
+        padding:5px 20px;
+        background-color: var(--combine-btn-link2);
+      }
+    }
+    button{
+      padding:5px 20px;
+      border: none;
+      display: block;
+      margin: auto;
+      border-radius: 8px;
+      box-shadow: 2px 2px 3px teal;
+      background-color: var(--combine-btn-link2);
+    }
+    button a{
+      color: rgb(42, 39, 39);
+      padding:5px 20px;
+
+      background-color: var(--combine-btn-link2);
+    }
+ }
+
+ #section6{
+  /* position: relative;
+  top: 400px; */
+  padding-bottom: 50px;
+  
+  button{
+    padding:5px 20px;
+    border: none;
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 3px teal;
+    background-color: var(--combine-btn-link2);
+  }
+  button a{
+    color: rgb(42, 39, 39);
+    padding:5px 20px;
+
+    background-color: var(--combine-btn-link2);
+  }
+   h1{
+    padding:0px 40px;
+    font-size: 30px;
+   }
+   p{
+    padding:0px 40px;
+   }
+   #section6-container{
+     display: grid;
+     grid-template-columns:1fr;
+     gap: 20px;
+     padding: 40px;
+ 
+   .section6-child{
+     padding: 20px;
+     border-radius: 8px;
+     box-shadow: 1px 1px 3px gray;
+     /* border: 1px solid red; */
+     background-color: aliceblue;
+     
+     h4 i{
+       color: orangered;
+     }
+    
+   }
+ }
+
+ 
+     #all-project-button{
+       padding:5px 20px;
+       border: none;
+       display: block;
+       margin: auto;
+       border-radius: 8px;
+       box-shadow: 2px 3px 4px rgb(32, 39, 39);
+       background-color: var(--combine-btn-link2);
+     }
+     #all-project-button:hover{
+       box-shadow: 2px 3px 4px teal;
+     }
+ }
+ 
+
+
+ .footer-section{
+  position: sticky;
+  top: 0px;
+  padding: 30px;
+  background-color: rgba(127, 255, 212, 0.777);
+  
+
+  .footer-container{
+    display: block;
+   
+    .footer-child{
+      display: block;
+      width: 50%;
+      margin-top: 20px;
+    }
+
+    .child2{
+      /* border: 1px solid red; */
+      width: 100%;
+      background-color: rgba(0, 128, 128, 0.548);
+      border-radius: 5px;
+      h3{
+        vertical-align: middle;
+        font-size: 1rem;
+        padding:20px ;
+      }
+      p{
+        font-size: .4rem;
+      }
+      form{
+        input,textarea{
+          width: 100%;
+          border: none;
+          border-radius: 4px;
+        }
+        input{
+          height: 30px;
+        }
+
+        table,td,tr{
+          padding: 6px;
+        }
+
+        input:focus{
+          outline: 2px solid blue;
+          box-shadow: 2px 2px 4px lightblue,-2px -2px 4px lightblue;
+        }
+        textarea{
+          padding: 10px;
+        }
+        textarea:focus{
+          outline: 2px solid blue;
+          box-shadow: 2px 2px 4px lightblue,-2px -2px 4px lightblue;
+
+        }
+        input[type=submit]{
+          background-color: rgb(210, 228, 247);
+          color: rgb(1, 28, 51);
+          border:none;
+          outline: none;
+          
+        }
+      }
+    }
+
+    .child1-part2{
+      width: 40%;
+
+      
+    }
+    .child1{
+      /* border: 1px solid red; */
+      img{
+        width: 50%;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        display: block;
+        margin: auto;
+      }
+
+      ul li{
+        font-size: 15px;
+
+        a i{
+          font-size: 1.4rem;
+        }
+      }
+    }
+   
+  }
+ }
  }
