@@ -858,7 +858,7 @@ header{
     .child2{
       /* border: 1px solid red; */
       width: 100%;
-      background-color: rgba(0, 128, 128, 0.548);
+      background-image: url("svg/gif-blog3.gif");
       border-radius: 5px;
       h3{
         vertical-align: middle;
